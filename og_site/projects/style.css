@@ -29,7 +29,7 @@ img:first-of-type {
 .text {
     z-index: 10;
     position: fixed;
-    padding-top: 20vh;
+    padding-top: 10vh;
     padding-left: 60px;
     padding-right: 60px;
     width: 40vw;
@@ -48,7 +48,7 @@ img:first-of-type {
         margin-left: auto;
         margin-right: auto;
         width: 75vw;
-        padding-top: 5vh;
+        padding-top: 10vh;
         padding-left: 40px;
         padding-right: 40px;
         -webkit-transition: .2s;
