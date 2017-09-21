@@ -1,0 +1,12 @@
+menu {
+   position: fixed;
+   top: 10px;
+   left: 20px;
+   z-index: 5000;
+   opacity: .2;
+   width: auto;
+}
+
+menu:hover {
+   opacity: 1;
+}

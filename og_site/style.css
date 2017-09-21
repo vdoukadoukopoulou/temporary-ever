@@ -1,0 +1,57 @@
+body {
+  font-family: 'Overpass', 'Fira Sans', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid #3c00ff;
+}
+
+a:hover {
+  border-bottom: dotted;
+}
+
+.front {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  text-align: justify;
+}
+
+.overlay {
+  display: none;
+  z-index: 9999999999;
+  background-color: #3c00ff;
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay a {
+  position: relative;
+  margin-left: 60px;
+  display: block;
+}
+
+.overlay a:nth-of-type(1) {
+  padding-top: 20vh;
+}
+
+img {
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
+}

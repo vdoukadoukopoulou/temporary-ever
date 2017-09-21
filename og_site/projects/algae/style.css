@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16pt;
+  line-height: 34pt;
+  margin: 0;
+  text-rendering: geometricPrecision;
+  color: #000000;
+  max-width: 100%;
+  overflow-x: hidden;
+  /*cus victoria doesn't like capital*/
+  text-transform: lowercase;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid #3c00ff;
+}
+
+a:hover {
+  border-bottom: dotted;
+}
+
+.content {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+
+.chapter {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.chapter_img {
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 80px;
+}
+
+h1, h2, h3, h4 {
+  color: #3C00FF;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 8.57px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: bold;
+  letter-spacing: 8.57px;
+  margin-bottom: 175px;
+}
+
+h3 {
+  font-weight: bold;
+  letter-spacing: 8.57px;
+  margin-top: 175px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 12pt;
+  color: #3C00FF;
+  letter-spacing: 3.21px;
+  margin-top: 0;
+  margin-bottom: 175px;
+}
+
+p {
+  margin-top: 0;
+  letter-spacing: 0;
+  line-height: 34px;
+  text-align: justify;
+  margin-bottom: 75px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.space {}
+
+
+/* tooltip */
+
+.tooltips {
+  position: relative;
+  display: inline;
+  border-bottom: 0px;
+}
+
+.tooltips:hover {
+  border-bottom: 0px;
+}
+
+.tooltips span {
+  position: absolute;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+}
+
+a:hover.tooltips span {
+  visibility: visible;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -376px;
+  z-index: 999;
+  color: #3C00FF;
+  font-weight: bold;
+  font-size: 36px;
+  width: 800px;
+}
+
+.circle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: -1;
+  height: 30px;
+  width: 30px;
+  background: #3C00FF;
+  border-radius: 50px;
+}
+
+.blue .chapter a:hover.tooltips span {
+  color: white;
+}
+
+.blue .chapter .circle::after {
+  background: white;
+  z-index: 1;
+}
+
+
+/* tooltop ends */
+
+.left, .right {
+  width: 44%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right {
+  padding-left: 10%;
+}
+
+
+/* color changes */
+
+.blue {
+  background-color: #3c00ff;
+  color: white;
+}
+
+
+/* white space */
+
+.white_space {
+  padding-top: 50px;
+}
+
+
+/* align */
+
+.align_right p {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* images */
+
+.img_50 {
+  float: left;
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+  display: inline-block;
+  white-space: normal;
+  padding-bottom: 20px;
+}
+
+.img_50.img_50:nth-of-type(odd) {
+  margin-left: 20px;
+}
+
+.img_100 {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+
+/* dying */
+
+.dying {
+  list-style-type: none;
+  padding: 0;
+  font-size: 44pt;
+  letter-spacing: -1.54px;
+  line-height: 18pt;
+  text-align: center;
+}
+
+.dying li:first-child {
+  line-height: 80pt;
+}
+
+.dying li:nth-child(n+9) {
+  line-height: 80pt;
+}
+
+
+/* action */
+
+.action {
+  list-style-type: none;
+}
+
+.action li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -30pt;
+}
+
+
+/* crazy big number */
+
+.big {
+  font-size: 144pt;
+}
+
+
+/* rip */
+
+.rip {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+
+/* home */
+
+#home a {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  border: none;
+  background-color: #3C00FF;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 5px;
+}
+
+#home a:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .big {
+    font-size: 70pt;
+  }
+  .chapter {
+    padding: 0 30px;
+  }
+}
