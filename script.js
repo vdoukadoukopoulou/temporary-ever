@@ -15,4 +15,14 @@ var sites = [
     function randomSite() {
         var i = parseInt(Math.random() * sites.length);
         location.href = sites[i];
-    }
+    };
+
+
+
+  function correspondance() {
+        $("#first_link").hide();
+      $("#second_link").show();
+        $("#third_link").show();
+      console.log('works?')
+  };
+  
