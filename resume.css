@@ -1,0 +1,13 @@
+embed {
+  width: 100vw;
+  height: 100vh;
+}
+
+#no_scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#outerCircleText {
+  color: #0000ff;
+}
