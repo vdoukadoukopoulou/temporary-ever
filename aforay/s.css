@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('https://fonts.googleapis.com/css?family=Work+Sans');
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Work Sans';
+
+}
+
+
+a {
+    color:coral;
+}
+
+a:visited {
+    color: rosybrown;
+}
+
+.one {
+    color: aquamarine;
+}
+
+.two {
+    list-style-type: decimal-leading-zero;
+    list-style-position: outside;
+    text-align-last: justify;
+
+}
+
+.three{
+    list-style-type: circle;
+    list-style-position: outside;
+    padding-top: 5px;
+    text-indent: 0px;
+}
+
+.four {
+    list-style-type: decimal;
+    list-style-position: inside;
+    text-indent: 30px;
+}
+
+.five {
+    list-style-type: disc;
+    list-style-position: inside;
+/* text-indent: 60px; */
+}
+
+dt {
+    max-width: 800px;
+    margin: 10px;
+
+}
+
+.sidenote {
+    border: solid 10px azure;
+    background-color: azure;
+    text-indent: 30px;
+    text-align: left;
+
+}
+
+.sidenote,
+.whatiamthinking a {
+    color: cornflowerblue;
+}
+
+.sidenote div{
+    padding-bottom: 10px;
+}
+
+.navigation {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+
+.whatiamthinking {
+    border: solid 10px lemonchiffon;
+    background-color: lemonchiffon;
+    text-indent: 30px;
+    text-align: left;
+    color:#7c7219;
+
+}
+
+.whatiamthinking div{
+    padding-bottom: 10px;
+}
+
+figure {
+    float:right;
+    clear: right;
+}
+
+figcaption {
+    font-size: 14px;
+    width: 30vw;
+    min-width: 300px;
+    max-width:400px;
+    padding: 10px;
+}
+
+.fig{
+    
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+.img {
+    width: 30vw;
+    min-width: 300px;
+    max-width:400px;
+    float: right;
+    clear: right;
+    padding: 10px;
+    display: inline-block;
+}
+
+#0101{
+    width: 60px;
+}
