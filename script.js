@@ -25,4 +25,3 @@ var sites = [
         $("#third_link").show();
       console.log('works?')
   };
-  
