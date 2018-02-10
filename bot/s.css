@@ -25,7 +25,6 @@ a:visited {
 .two {
     list-style-type: decimal-leading-zero;
     list-style-position: outside;
-    text-align-last: justify;
 
 }
 
@@ -104,7 +103,7 @@ figcaption {
 }
 
 .fig{
-    
+
     padding-top: 5px;
     padding-left: 50px;
     padding-bottom: 5px;
