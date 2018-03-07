@@ -11,6 +11,11 @@ body {
    color: white;
 }
 
+p {
+  z-index: 10;
+  position: relative;
+}
+
 a {
    text-decoration: none;
    color: inherit;
@@ -108,11 +113,12 @@ img {
 
 #purchase {
   position: fixed;
-  right: 40px;
-  bottom: 40px;
-  width: 180px;
-  padding: 20px;
+  right: 10px;
+  bottom: 20px;
+  width: 160px;
+  padding: 10px;
   border: 1px solid #fff;
+  z-index: 1;
 }
 
 #purchase img {
@@ -131,16 +137,20 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  font-size: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  font-size: 9px;
   color: #FFFFFF;
   letter-spacing: 0;
   text-align: justify;
-  line-height: 14px;
+  line-height: 11px;
 }
 
 #purchase:hover p {
   opacity: 1;
+}
+
+#purchase form img {
+  display: none;
 }
