@@ -1,0 +1,44 @@
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.links {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .links .dot {
+    display: none;
+  }
+
+  .links a::after {
+    content: ' ➪';
+  }
+}
+
+.links div {
+  position: relative;
+}
+
+a:hover,
+.links a:hover {
+  border-bottom: 1px dotted;
+  cursor: pointer;
+}
